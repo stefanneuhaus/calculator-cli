@@ -9,8 +9,7 @@ public class Absolute {
     }
 
     public long absoluteValueOf(int value) {
-        // TODO: replace by: long negativeValue = de.hsd.swe.MathUtils.negate(value);
-        long negativeValue = -42;
+        long negativeValue = de.hsd.swe.MathUtils.negate(value);
 
         long result = value >= 0 ? value : negativeValue;
         return result;
