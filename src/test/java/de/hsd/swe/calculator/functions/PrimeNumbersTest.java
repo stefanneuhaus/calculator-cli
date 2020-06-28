@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class PrimeNumbersTest {
 
     @ParameterizedTest
-    @ValueSource(ints = {2, 3, 23, 1597, 28657, 2147483647})
+    @ValueSource(ints = {2, 3, 23, 1597, 28657})
     void isPrimeNumber_returnsTrueForActualPrimes(int primeNumber) {
         assertTrue(PrimeNumbers.INSTANCE.isPrimeNumber(primeNumber));
     }
